@@ -1,0 +1,23 @@
+{
+  "name": "oauth-2.0-ssd-assignment",
+  "version": "1.0.0",
+  "description": "SSD Assignment 2 - OAuth2.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ntbandara3/OAuth-2.0-SSD-Assignment.git"
+  },
+  "author": "Nandun Bandara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ntbandara3/OAuth-2.0-SSD-Assignment/issues"
+  },
+  "homepage": "https://github.com/ntbandara3/OAuth-2.0-SSD-Assignment#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3"
+  }
+}
