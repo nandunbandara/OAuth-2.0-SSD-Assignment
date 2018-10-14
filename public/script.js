@@ -13,4 +13,7 @@ fetch('https://api.github.com/user', {
 .then( res => res.json())
 .then( res => {
     console.log(res);
-})
+
+    $("#avatar").attr("src", res.avatar_url);
+    document.getElementById('username').innerHTML = res.login;
+});

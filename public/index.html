@@ -1,10 +1,25 @@
 <html>
     <head>
         <title>View My Git</title>
+
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     </head>
     <body>
-        <a href="https://github.com/login/oauth/authorize?client_id=b85ce83130585933990f&redirect_uri=http://localhost:8090/oauth/redirect">
-            Login with github
-          </a>
+        <div class="container">
+            <div class="center-box">
+                <h1>View My Git</h1>
+                <button class="btn btn-primary" onclick="return authorize()">
+                        Login with GitHub
+                </button>
+            </div>
+        </div>
+        <script>
+            function authorize(){
+                window.location.href = "https://github.com/login/oauth/authorize?client_id=b85ce83130585933990f&redirect_uri=http://localhost:8090/oauth/redirect";
+            }
+        </script>
+        <script src="assets/js/jquery-3.3.1.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
