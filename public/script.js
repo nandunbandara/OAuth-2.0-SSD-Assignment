@@ -3,3 +3,14 @@ const queryParams = window.location.search.substring(1);
 const token = queryParams.split('access_token=')[1];
 
 console.log(token);
+
+fetch('https://api.github.com/user', {
+    headers: {
+        Authorization: 'token ' + token
+    }
+})
+
+.then( res => res.json())
+.then( res => {
+    console.log(res);
+})
