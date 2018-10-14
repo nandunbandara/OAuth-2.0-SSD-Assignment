@@ -16,4 +16,7 @@ fetch('https://api.github.com/user', {
 
     $("#avatar").attr("src", res.avatar_url);
     document.getElementById('username').innerHTML = res.login;
-});
+})
+.catch( err => {
+    window.location.href = "http://localhost:8090/";
+})
