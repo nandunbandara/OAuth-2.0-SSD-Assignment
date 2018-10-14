@@ -2,6 +2,8 @@
 const queryParams = window.location.search.substring(1); 
 const token = queryParams.split('access_token=')[1];
 
+$('#loader').show();
+
 console.log(token);
 
 fetch('https://api.github.com/user', {
@@ -15,7 +17,9 @@ fetch('https://api.github.com/user', {
     console.log(res);
 
     $("#avatar").attr("src", res.avatar_url);
-    document.getElementById('username').innerHTML = res.login;
+    $('#username').html(res.login);
+
+    $('#loader').hide();
 })
 .catch( err => {
     window.location.href = "http://localhost:8090/";
