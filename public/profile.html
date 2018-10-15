@@ -4,22 +4,53 @@
 
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css" rel="stylesheet" media="screen">  
+
     </head>
     <body>
-
-        <div class="container">
-            <div class="row justify-content-md-center">
-                <div class="col-12 text-center">
-                    <img id="avatar" class="img-thumbnail">
-                    <h2 id="username"></h2>
-                </div>
-            </div>
-        </div>
 
         <div class="center-box" id="loader">
                 <div class="loader"></div>
                 <h4 class="loader-text">Loading</h4>
-            </div> 
+        </div> 
+
+        
+        <div class="container">
+            <div class="row user-menu-container square" id="user-container">
+                <div class="col-md-2"></div>
+                <div class="col-md-9 col-sm-12 user-details">
+                    <div class="row coralbg white">
+                        <div class="col-md-6 no-pad">
+                            <div class="user-pad">
+                                <h3 id="name">Jessica</h3>
+                                <h4 id="username" class="white"><i class="fa fa-check-circle-o"></i> San Antonio, TX</h4>
+                                <h6 class="white" id="bio"><i class="fa fa-twitter"></i> CoolesOCool</h6>
+                            </div>
+                        </div>
+                        <div class="col-md-6 no-pad">
+                            <div class="user-image">
+                                <img id="avatar" class="img-responsive thumbnail">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row overview">
+                        <div class="col-md-4 user-pad text-center">
+                            <h3>FOLLOWERS</h3>
+                            <h4 id="followers">2,784</h4>
+                        </div>
+                        <div class="col-md-4 user-pad text-center">
+                            <h3>FOLLOWING</h3>
+                            <h4 id="following">456</h4>
+                        </div>
+                        <div class="col-md-4 user-pad text-center">
+                            <h3>PUBLIC REPOS</h3>
+                            <h4 id="repos">4,901</h4>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
 
         <script src="assets/js/jquery-3.3.1.min.js"></script>
         <script src="assets/js/bootstrap.bundle.min.js"></script>
